@@ -47,7 +47,8 @@ function calculateEllipseArea(){
     const b = getInputValue('ellipse-b')
     const a = getInputValue('ellipse-a')
     const area = 3.1416*b*a;
-    setTextFieldText('ellipse-area', area)
+    const areaTwoDecimal = area.toFixed(2)
+    setTextFieldText('ellipse-area', areaTwoDecimal)
 }
 
 
