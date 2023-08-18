@@ -18,6 +18,10 @@
 </header>
 
 <main>
+        <!-- area calculator  -->
+        <div class="w-[400px] mb-10">
+            <div class="text-4xl">Area Calculator</div>
+       </div>
     <!-- container  -->
     <div class="flex flex-col lg:flex-row">
         <!-- shape container  -->
@@ -29,46 +33,89 @@
                   <h2 class="card-title">Triangle</h2>
                   <p>Area (A) = 0.5*b*h</p>
                   <p>
-                    <input type="text" class="border w-24 px-2 text-xl bg-gray-200" placeholder="B">
+                    <input type="text" class="border w-24 px-2 text-xl bg-gray-200" placeholder="B" id="triangle-base">
                     <span>cm</span>
-                    <input type="text" class="border w-24 px-2 text-xl bg-gray-200" placeholder="H">
+                    <input type="text" class="border w-24 px-2 text-xl bg-gray-200" placeholder="H" id="triangle-height">
                     <span>cm</span>
                   </p>
+                  <p>Area : <span id="triangle-area"></span></p>
 
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+                  <div class="card-actions ">
+                    <button onclick="calculateTriangleArea()" class="btn btn-primary w-full ">calculate</button>
                   </div>
                 </div>
               </div>
-            <!-- second card  -->
+              <!-- second card  -->
             <div class="card w-96 bg-base-100 shadow-xl">
                 <figure><img src="./images/rectangle.png" alt="Shoes" /></figure>
                 <div class="card-body">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+                  <h2 class="card-title">Rectangle</h2>
+                  <p>Area (A) = w x l</p>
+                  <p>
+                    <input type="text" class="border w-24 px-2 text-xl bg-gray-200" placeholder="W" id="rectangle-width">
+                    <span>cm</span>
+                    <input type="text" class="border w-24 px-2 text-xl bg-gray-200" placeholder="l" id="rectangle-length">
+                    <span>cm</span>
+                  </p>
+                  <p>Area : <span id="rectangle-area"></span></p>
+
+                  <div class="card-actions ">
+                    <button onclick="calculateRectangleArea()" class="btn btn-primary w-full ">calculate</button>
                   </div>
                 </div>
               </div>
-            <!-- third card  -->
+
+
+              <!-- third card  -->
             <div class="card w-96 bg-base-100 shadow-xl">
-                <figure><img src="./images/rectangle.png" alt="Shoes" /></figure>
+                <figure><img src="./images/parallelogram.png" alt="Shoes" /></figure>
                 <div class="card-body">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+                  <h2 class="card-title">parallelogram</h2>
+                  <p>Area (A) = b x h</p>
+                  <p>
+                    <input type="text" class="border w-24 px-2 text-xl bg-gray-200" placeholder="W" id="parallelogram-base">
+                    <span>cm</span>
+                    <input type="text" class="border w-24 px-2 text-xl bg-gray-200" placeholder="l" id="parallelogram-height">
+                    <span>cm</span>
+                  </p>
+                  <p>Area : <span id="parallelogram-area"></span></p>
+
+                  <div class="card-actions ">
+                    <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full ">calculate</button>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+            <!-- forth card  -->
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="./images/ellipse.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">ellipse</h2>
+                  <p>Area (A) = 3.1416 x b x a</p>
+                  <p>
+                    <input type="text" class="border w-24 px-2 text-xl bg-gray-200" placeholder="b" id="ellipse-a">
+                    <span>cm</span>
+                    <input type="text" class="border w-24 px-2 text-xl bg-gray-200" placeholder="a" id="ellipse-b">
+                    <span>cm</span>
+                  </p>
+                  <p>Area : <span id="ellipse-area"></span></p>
+
+                  <div class="card-actions ">
+                    <button onclick="calculateEllipseArea()" class="btn btn-primary w-full ">calculate</button>
                   </div>
                 </div>
               </div>
         </div> 
-        <!-- area calculator  -->
-        <div class="w-[400px]">
-             <div class="text-4xl">Area Calculator</div>
-        </div>
+    
     </div>
 </main>
+
+
+<script src="scripts/area-calculator.js"></script>
 </body>
 
 </html>
